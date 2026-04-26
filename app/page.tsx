@@ -133,7 +133,7 @@ export default function Home() {
               margin: "12px 0 0",
             }}
           >
-            No login required. Free to try.
+            No signup needed. Get your first export strategy instantly.
           </p>
         </form>
 
