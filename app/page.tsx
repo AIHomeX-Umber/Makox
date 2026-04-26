@@ -185,7 +185,7 @@ export default function Home() {
             studies, and private beta access as Makox improves.
           </p>
 
-          <form action="https://formspree.io/f/YOUR_ID" method="POST">
+          <form action="https://formspree.io/f/xrerdodq" method="POST">
             <div
               style={{
                 display: "flex",
