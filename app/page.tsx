@@ -385,6 +385,16 @@ export default function Home() {
           text-decoration: none;
         }
         .footer-logo a:hover { color: var(--accent); }
+        .service-link {
+          display: inline-block;
+          margin-top: 16px;
+          font-family: 'DM Mono', monospace;
+          font-size: 10px;
+          color: var(--accent);
+          letter-spacing: 0.08em;
+          text-decoration: none;
+        }
+        .service-link:hover { color: var(--accent2); }
         .footer-right {
           font-family: 'DM Mono', monospace;
           font-size: 10px; color: var(--muted);
@@ -533,6 +543,7 @@ export default function Home() {
               <span className="tag">工作流部署</span>
               <span className="tag">2–4 周上线</span>
             </div>
+            <a className="service-link" href="/digital-employees">了解数字员工 →</a>
           </div>
 
           <div className="service-card">
