@@ -608,9 +608,9 @@ export default function Home() {
       {/* FOOTER */}
       <footer>
         <div className="footer-logo">
-          <a href="#" onClick={(event) => event.preventDefault()}>Makox.AI</a>
+          <span>Makox.AI</span>
           <span style={{color:'rgba(255,255,255,0.12)',fontSize:'12px'}}> × </span>
-          <a href="https://opceo.ai" target="_blank" rel="noreferrer">OPCEO.ai</a>
+          <a href="https://opceo.ai" target="_blank" rel="noopener noreferrer">OPCEO.ai</a>
         </div>
         <div className="footer-right">马时科技 · 苏州 × 香港 · 2026</div>
       </footer>
