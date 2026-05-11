@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Makox · 制造业 AI 出海操作系统",
-  description: "专注三件事：企业 Agent 部署、数字员工搭建、数据治理与 Workflow 梳理。帮制造业企业跑通 AI 出海。",
+  description: "专注企业 Agent 部署、Makox 数字员工搭建、数据治理与 Workflow 梳理。帮制造业企业跑通真实业务场景。",
 };
 
 export default function Home() {
@@ -380,6 +380,11 @@ export default function Home() {
           font-size: 16px; color: var(--muted);
         }
         .footer-logo span { color: var(--accent); }
+        .footer-logo a {
+          color: inherit;
+          text-decoration: none;
+        }
+        .footer-logo a:hover { color: var(--accent); }
         .footer-right {
           font-family: 'DM Mono', monospace;
           font-size: 10px; color: var(--muted);
@@ -401,7 +406,7 @@ export default function Home() {
       <nav className="nav">
         <a href="/" className="logo">Ma<span>k</span>ox</a>
         <div className="nav-tag">B · Enterprise AI</div>
-        <a href="mailto:MashiTeam@163.com" className="nav-cta">预约咨询</a>
+        <a href="mailto:MashiTeam@163.com" className="nav-cta">预约诊断</a>
       </nav>
 
       {/* HERO */}
@@ -449,12 +454,12 @@ export default function Home() {
       {/* TRACTION */}
       <div className="traction-band">
         <div className="traction-item">
-          <div className="traction-num">¥<span>10</span>万+</div>
+          <div className="traction-num">¥<span>100</span>万+</div>
           <div className="traction-label">早期收入</div>
         </div>
         <div className="traction-item">
-          <div className="traction-num"><span>2</span></div>
-          <div className="traction-label">付费企业客户</div>
+          <div className="traction-num"><span>3</span>+</div>
+          <div className="traction-label">深度合作客户</div>
         </div>
         <div className="traction-item">
           <div className="traction-num"><span>20</span>年</div>
@@ -496,15 +501,37 @@ export default function Home() {
           <div className="service-card">
             <span className="service-arrow">↗</span>
             <div className="service-num">02</div>
-            <div className="service-icon-wrap">👤</div>
-            <div className="service-name">数字员工<br />搭建</div>
+            <div className="service-icon-wrap" aria-hidden="true">
+              <span style={{
+                display: 'block',
+                width: '22px',
+                height: '22px',
+                borderRadius: '50%',
+                border: '1px solid rgba(232,230,255,0.34)',
+                position: 'relative'
+              }}>
+                <span style={{
+                  position: 'absolute',
+                  left: '50%',
+                  top: '50%',
+                  width: '28px',
+                  height: '1px',
+                  background: 'var(--accent)',
+                  transform: 'translate(-50%, -50%)'
+                }} />
+              </span>
+            </div>
+            <div className="service-name">Makox 数字员工<br />搭建</div>
             <p className="service-desc">
-              从岗位分析到 AI 数字员工上线，覆盖外贸跟单、多语言内容生产、客户响应全链路，让一个人可以干五个人的活。
+              为企业部署 Makox 数字员工，覆盖内容、客服、外贸跟单、SOP 自动化、多语言执行与运营协同，让一个人撬动一组岗位产能。
+              <br /><br />
+              不是工具接入。是岗位级 AI 落地。
             </p>
             <div className="service-tags">
-              <span className="tag">岗位级 AI 替代</span>
-              <span className="tag">多语言</span>
-              <span className="tag">2–4 周交付</span>
+              <span className="tag">岗位级 AI</span>
+              <span className="tag">数字员工</span>
+              <span className="tag">工作流部署</span>
+              <span className="tag">2–4 周上线</span>
             </div>
           </div>
 
@@ -563,22 +590,28 @@ export default function Home() {
           <div>
             <div className="cta-title">准备好让 AI<br />进入你的企业了吗？</div>
             <p className="cta-sub">
-              预约一次免费的 AI 落地诊断，我们会帮你判断：现在最值得先跑通哪一件事。
+              预约一次免费的 AI 工作流诊断，<br />
+              我们会帮你判断：<br />
+              现在最值得先跑通哪一件事。
             </p>
           </div>
           <div className="cta-right">
             <div className="input-row">
-              <input className="cta-input" type="email" placeholder="你的邮箱或微信" />
-              <a href="mailto:MashiTeam@163.com" className="btn-primary" style={{whiteSpace:'nowrap'}}>预约诊断</a>
+              <input className="cta-input" type="email" placeholder="留下微信 / 邮箱" />
+              <a href="mailto:MashiTeam@163.com" className="btn-primary" style={{whiteSpace:'nowrap'}}>预约 AI 工作流诊断</a>
             </div>
-            <div className="cta-note">通常 24 小时内回复 · 完全免费</div>
+            <div className="cta-note">通常 24 小时内回复 · 首次 AI 诊断免费</div>
           </div>
         </div>
       </div>
 
       {/* FOOTER */}
       <footer>
-        <div className="footer-logo">Ma<span>k</span>ox <span style={{color:'rgba(255,255,255,0.12)',fontSize:'12px'}}>×</span> OPCEO.ai</div>
+        <div className="footer-logo">
+          <a href="#" onClick={(event) => event.preventDefault()}>Makox.AI</a>
+          <span style={{color:'rgba(255,255,255,0.12)',fontSize:'12px'}}> × </span>
+          <a href="https://opceo.ai" target="_blank" rel="noreferrer">OPCEO.ai</a>
+        </div>
         <div className="footer-right">马时科技 · 苏州 × 香港 · 2026</div>
       </footer>
     </>
